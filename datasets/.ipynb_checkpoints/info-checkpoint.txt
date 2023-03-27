@@ -1,0 +1,65 @@
+The dataset can be seperate into two parts, including dataset for PRINCE ML model, dataset for 50X ML model.
+
+dataset for 50X ML model 
+    50X_groundtruth_20221116_Plate21
+    50X_groundtruth_20230109_Plate521
+    50X_groundtruth_20230111_Plate493
+    50X_groundtruth_20230111_Plate521
+    50X_groundtruth_20230113_Plate521
+
+dataset for ML model
+    20221116_Plate21
+    20230109_Plate521
+    20230111_Plate493
+    20230111_Plate521
+    20230113_Plate521
+
+    combine_width_test
+    combine_width_train
+    Notice:
+    The dataset combine Felix's dataset and Kai-Kai's dataset.
+    data_list_k = ["20221116_Plate21","20230109_Plate521","20230111_Plate521","20230113_Plate521","20230111_Plate493"]
+    data_list_f = ["varying_lum_and_focus_train","varying_lum_and_focus_test"].
+    X_train_k, y_train_k, X_test_k , y_test_k = combine_dataset(data_list_k,2)
+    X_train_f, y_train_f, X_test_f , y_test_f = combine_dataset(data_list_f,1)
+    X_train = np.concatenate([X_train_k,X_train_f], axis=0)
+    X_test = np.concatenate ([X_test_k ,X_test_f] , axis=0)
+    y_train = np.concatenate([y_train_k,y_train_f], axis=0)
+    y_test = np.concatenate ([y_test_k ,y_test_f] , axis=0)
+    X_train, y_train was saved as combine_width_train
+    X_test, y_test was saved as combine_width_test
+
+    focused_with_varying_lum_test
+    focused_with_varying_lum_train
+    single_focus_-0.1_test
+    single_focus_-0.1_train
+    single_focus_-0.2_test
+    single_focus_-0.2_train
+    single_focus_-0.3_test
+    single_focus_-0.3_train
+    single_focus_0.0_test
+    single_focus_0.0_train
+    single_focus_0.1_test
+    single_focus_0.1_train
+    single_focus_0.2_test
+    single_focus_0.2_train
+    single_focus_0.3_test
+    single_focus_0.3_train
+    single_focus_0.4_test
+    single_focus_0.4_train
+    single_focus_0.5_test
+    single_focus_0.5_train
+    single_lum_-100_focus_0_test
+    single_lum_-100_focus_0_train
+    single_lum_-200_focus_0_test
+    single_lum_-200_focus_0_train
+    single_lum_100_focus_0_test
+    single_lum_100_focus_0_train
+    single_lum_200_focus_0_test
+    single_lum_200_focus_0_train
+    single_lum_400_focus_0_test
+    single_lum_400_focus_0_train
+    test_felix_mardi
+    vary_width
+    varying_lum_and_focus_test
+    varying_lum_and_focus_train

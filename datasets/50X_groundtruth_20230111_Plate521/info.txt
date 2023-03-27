@@ -1,0 +1,44 @@
+Slice array: (154, 200) Label array: (154,)
+Plate number 521
+Strain: C2
+Crossdate: 04/01/23
+Prince position: 2
+PRINCE FULL DATA: 20230111_1349_Plate02
+Notice: bin2. The width should be multiplied by 2.The file's below will not be written in the file/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos10.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos11.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos12.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos13.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos14.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos15.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos17.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos18.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos20.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos23.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos24.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos25.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos26.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos27.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos28.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos29.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos3.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos30.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos32.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos34.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos36.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos37.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos38.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos39.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos4.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos41.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos42.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos44.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos45.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos46.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos47.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos48.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos49.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos5.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos6.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos7.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos8.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230104_Plate521_2/pos9.tiff

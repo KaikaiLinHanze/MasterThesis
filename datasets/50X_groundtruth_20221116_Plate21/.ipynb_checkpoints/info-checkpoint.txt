@@ -1,0 +1,8 @@
+Slice array: (1323, 200) Label array: (1323,)
+Plate number 705
+Strain: C2
+Crossdate: 10/14
+Prince position: 21
+PRINCE FULL DATA: 20221116_0311_Plate21
+This dataset get 10 points from each segment
+The binning is 2 when I extract the data that means you should take care of the feature.

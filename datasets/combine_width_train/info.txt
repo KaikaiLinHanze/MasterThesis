@@ -1,0 +1,13 @@
+Slice array: (2543, 120) Label array: (2543, 1)
+You do not have to do any thing for the width.
+
+The dataset below are all of the data in this dataset.
+data_list_k = ["20221116_Plate21","20230109_Plate521","20230111_Plate521","20230113_Plate521","20230111_Plate493"]
+data_list_f = ["varying_lum_and_focus_train","varying_lum_and_focus_test"].
+X_train_k, y_train_k, X_test_k , y_test_k = combine_dataset(data_list_k,2)
+X_train_f, y_train_f, X_test_f , y_test_f = combine_dataset(data_list_f,1)
+X_train = np.concatenate([X_train_k,X_train_f], axis=0)
+X_test = np.concatenate ([X_test_k ,X_test_f] , axis=0)
+y_train = np.concatenate([y_train_k,y_train_f], axis=0)
+y_test = np.concatenate ([y_test_k ,y_test_f] , axis=0)
+

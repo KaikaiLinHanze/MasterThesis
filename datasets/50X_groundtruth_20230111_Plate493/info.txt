@@ -1,0 +1,33 @@
+Slice array: (514, 200) Label array: (514,)
+Plate number 493
+Strain: Agg
+Crossdate: 06/12/22
+Prince position: 24
+PRINCE FULL DATA: 20230111_1248_Plate24
+Notice: bin2. The width should be multiplied by 2.The file's below will not be written in the file/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos1.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos12.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos15.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos17.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos19.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos2.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos24.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos25.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos30.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos37.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos38.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos43.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos48.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos5.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos54.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos56.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos57.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos58.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos61.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos62.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos65.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos68.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos69.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos71.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos72.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos73.tiff
+/home/ipausers/lin/Desktop/Kai/Graduation-Project/Experiment/Labelme/20230111_Plate493/pos74.tiff
