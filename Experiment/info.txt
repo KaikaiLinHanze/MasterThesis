@@ -1,0 +1,15 @@
+20220714_plate_120_groundtruths_close_up was extracted by Felix. 
+In order to label the width in the same way, it was used as a reference.
+The rest of the folder have its info.txt to get more details.
+The xlsx file is used to take note for the the corresponding node at the PRINCE image.
+It was also use to create the dataset.
+
+Fluorescence_ex_Kai-kai_Plate493 is the data for 20230111_Plate493
+Fluorescence_ex_Kai-kai_Plate521 is the data for 20230104_Plate521
+Fluorescence_ex_Kai-kai_Plate705 is the data for 20221116_Plate705
+
+If your need more details, you can check the sheet of the file.
+
+In 20221116_Plate705, "50X_ML" sheet is for creating the ground truth ML model.
+In 20221116_Plate705, "compare ground truth and actual" sheet is for comparing the ground truth  with ML model.
+Notice the data is the first version of the model. It is not the latest version.

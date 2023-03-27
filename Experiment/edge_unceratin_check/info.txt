@@ -1,0 +1,13 @@
+The image was randomly selected
+The file name was given by:
+Date of crossed date + Plate number + strain + extract time + position in the folder.
+
+Example:20230104_Plate521_C2_E1_pos17
+
+Date of crossed date: 20230104
+Plate number: Plate521
+strain: C2
+extract time: E1 (means the first time of the extract)
+position: pos17
+
+If your want to check the raw data, you can check pos17 in the 20230104_Plate521 folder.
