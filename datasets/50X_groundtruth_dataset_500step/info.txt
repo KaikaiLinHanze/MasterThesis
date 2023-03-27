@@ -1,0 +1,6 @@
+Slice array: (123, 200) Label array: (123,)
+Plate number 705
+Strain: C2
+Crossdate: 10/14
+Prince position: 21
+PRINCE FULL DATA: 20221116_0311_Plate21

@@ -1,0 +1,2 @@
+Slice array: (99, 120) Label array: (99,)
+This dataset contains data points with 400 illumination compared to default and a focus of 0.0 (perfect focus)

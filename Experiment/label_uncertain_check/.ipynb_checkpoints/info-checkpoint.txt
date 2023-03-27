@@ -1,0 +1,15 @@
+The image was randomly selected.
+pos32 is from 20230111_Plate493_2/pos32.tiff
+pos8 is from 20230111_Plate493_2/pos8.tiff
+pos64 is from 20230104_Plate521/pos64.tiff
+pos56 is from 20221116_Plate705/pos56.tiff
+pos39_focus2 is from 20230111_Plate493_2/pos39_focus2.tiff
+
+original folder: the raw data with dot for setting new segment for measuring the width.
+time1 folder : the data with the segment result.
+time2 folder : the data with the segment result.
+time3 folder : the data with the segment result.
+time4 folder : the data with the segment result.
+time5 folder : the data with the segment result.
+
+Each position is segment for five times in order to precisely measure manual annotation imprecision.

@@ -1,0 +1,2 @@
+Slice array: (527, 120) Label array: (527,)
+This dataset contains data points with varying illumination and a focus of 0.0 (perfect focus)

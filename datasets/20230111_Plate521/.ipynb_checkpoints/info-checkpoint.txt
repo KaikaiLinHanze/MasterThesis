@@ -1,0 +1,7 @@
+Slice array: (200, 120) Label array: (200,)
+Plate number 521
+Strain: C2
+Crossdate: 04/01/23
+Prince position: 2
+PRINCE FULL DATA: 20230111_1349_Plate02
+Notice: bin2. The width should be multiply by 2.

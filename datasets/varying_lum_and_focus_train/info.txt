@@ -1,0 +1,2 @@
+Slice array: (1253, 120) Label array: (1253,)
+This dataset contains data points with varying illumination and varying focus (from -0.1 to 0.1)

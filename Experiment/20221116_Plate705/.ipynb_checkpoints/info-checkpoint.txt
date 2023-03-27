@@ -1,0 +1,7 @@
+Crossed date: Oct 10th 2022
+Extract date: Nov 16th 2022
+Root: carrot
+Strain: C2
+plate position: 21
+plate: 705
+bin: 2

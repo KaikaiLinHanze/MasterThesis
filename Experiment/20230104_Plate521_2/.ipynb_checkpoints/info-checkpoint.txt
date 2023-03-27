@@ -1,0 +1,9 @@
+Crossed date: Jan  4th 2023.
+Extract date: Jan 11th 2023
+Root: carrot
+Strain: C2
+plate position: 2
+plate: 521
+bin: 2
+
+

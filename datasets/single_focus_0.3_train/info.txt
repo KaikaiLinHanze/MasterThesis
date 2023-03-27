@@ -1,0 +1,3 @@
+Slice array: (157, 120) Label array: (157,)
+This dataset contains data points with normal illumination and all the same focus,
+which is shifted by a value of 0.3

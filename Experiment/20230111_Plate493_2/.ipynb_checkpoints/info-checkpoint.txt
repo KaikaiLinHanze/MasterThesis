@@ -1,0 +1,10 @@
+Crossed date: Dec  6th 2022
+Extract date: Jan 13th 2023
+Root: carrot
+Strain: Agg
+plate position: 24
+plate: 493
+bin: 2
+
+
+
