@@ -182,7 +182,7 @@ def load_model(model_save_path = model_path, select_model = "default_CNN_model.h
     return model
 
 
-def load_model_list(model_save_path= model_path, model_list):
+def load_model_list(model_list,model_save_path= model_path):
     """
     for loading several model at the same time.
     

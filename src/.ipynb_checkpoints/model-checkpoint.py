@@ -142,27 +142,6 @@ def build_model_CNN(hp):
     return model
 
 
-def hp_model_output_information(model,X_train,y_train,X_test,y_test):
-    """
-    This function is get the output from hp.
-    
-    model              : object, for evaluate the model
-    X                  : array, for feature for the model
-    y                  : array, for label for the model
-    X_test             : array, for feature for the model
-    y_test             : array, for label for the model
-    
-    return             : model, object of trained model
-                         list, objects of history for recording of training loss values and metrics values.
-                         list, objects of the evaluate result.
-    """
-    best_model, best_model_hp, history= evaluate_hp_model(model,X_train,y_train,X_test,y_test)
-    evaluate_epoch(history,type="loss")
-    evaluate_epoch(history,type="mae")
-    compare_predict_extact(best_model,X_test,y_test)
-    return best_model, best_model_hp, history
-
-
 def evaluate_hp_model(model,X_train,y_train,X_test,y_test,epochs=120,batch_size=5):
     """
     for evaluate the hp model
@@ -203,7 +182,7 @@ def load_model(model_save_path = model_path, select_model = "default_CNN_model.h
     return model
 
 
-def load_model_list(model_save_path= model_path, model_list):
+def load_model_list(model_list,model_save_path= model_path):
     """
     for loading several model at the same time.
     

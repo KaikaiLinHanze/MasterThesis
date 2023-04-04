@@ -169,7 +169,15 @@ def extract_file(path, folder_name, file_name):
 
 def get_edge_from_node(index,node_dict,node,exp):
     """
+    Use to get the edge from given node. Only return the first edge.
+    You must check whether the edge is the correct edge that you want.
     
+    index    : int, to collect the file from different timestep
+    node_dict: dict, the dict for collect the two node of the edge
+    node     : int, the position that you want to detect
+    exp      : object, Experiment
+    
+    return   : dict, the dict with index as key and edge as value.
     """
     t = 0
     G, pos = exp.nx_graph[t], exp.positions[t]
@@ -177,22 +185,55 @@ def get_edge_from_node(index,node_dict,node,exp):
     return node_dict
 
 def get_slices_from_node(index,slice_dict,node_dict,exp,target_length=120):
+    """
+    Use to get the slice from given node.
+    You must check whether the edge is the correct edge that you want.
+    
+    index        : int, to save slice from slice_dict and extract the node from node_dict
+    slice_dict   : dict, the dict for collect the slices.
+    node_dict    : dict, the dict already collect the node
+    exp          : object, Experiment
+    target_length: int, to change the value that you want to extract the feature.
+    
+    return       : dict, the dict with index as key and slice as value.
+    """
     node1, node2 = node_dict[index]
-    f_profiles = lambda edge: extract_section_profiles_for_edge(exp, 0, edge, resolution=5, offset=4, step=3,target_length=120)
+    f_profiles = lambda edge: extract_section_profiles_for_edge(exp, 0, edge, resolution=5, offset=4, step=3,target_length=target_length)
     slices, coords1, coords2 = f_profiles(get_edge_from_node_labels(exp, 0, node1,node2))
     slice_dict[index] = slices
     return slice_dict
 
 def get_width_from_slices(index,model,slice_dict,width_dict):
+    """
+    Use to predict the width from you given slice
+    
+    index        : int, to width slice from width_dict and extract the slice from slice_dict
+    model        : object, the trained tensorflow model that you would like to predict the width
+    slice_dict   : dict, the dict for extract the slice from value
+    width_dict   : dict, the dict for collect the width
+    exp          : object, Experiment
+    target_length: int, to change the value that you want to extract the feature.
+    
+    return       : dict, the dict with index as key and width as value.
+    """
     predict_value = model.predict(slice_dict[index],verbose=0)
     width_dict[index] = predict_value
     return width_dict
 
 def get_median_index_from_width(index,width_dict,median_index_dict):
+    """
+    Use to extract the index of the median width from width
+    
+    index             : int, to select the width from width dict and save into the median index dict
+    width_dict        : dict, the dict for extract the width from different time point
+    median_index_dict : dict, the dict for collect the median index
+    
+    return            : dict, the dict with index as key and median index of the width as value.
+    """
     width = width_dict[index]
     median = np.median(width)
-    if median > 1e5:
-        median = np.median(np.delete(width, np.where(width == median)))
+    # if median > 1e5:
+    #     median = np.median(np.delete(width, np.where(width == median)))
     median_index = np.where(width == median)[0]
     if len(median_index) == 0:
         median_index = (np.abs(width - median)).argmin()
@@ -203,19 +244,40 @@ def get_median_index_from_width(index,width_dict,median_index_dict):
     return width_dict, median_index_dict
 
 def get_slice_from_median_index(index,median_index_dict,slice_dict,median_slice_dict):
+    """
+    index             : int, to select the width from width dict and save into the median index dict
+    width_dict        : dict, the dict for extract the width from different time point
+    median_index_dict : dict, the dict for collect the median index
+    
+    return            : dict, the dict with index as key and median index of the width as value.
+    """
     median_index = median_index_dict[index]
     slices = slice_dict[index]
     median_slice_dict[index] = slices[median_index]
     return median_index, median_slice_dict
     
 def get_median_slice_width(exp,index,node,model,node_dict,slice_dict,width_dict,median_index_dict,median_slice_dict,target_length=120):
+    """
+    exp               : object, Experiment
+    index             : int, to select different key for saving value
+    node              : int, the position that you want to detect
+    model             : object, the trained tensorflow model that you would like to predict the width
+    node_dict         : dict, for collect and extract the node data
+    slice_dict        : dict, for collect and extract the slice data
+    width_dict        : dict, for collect and extract the width data
+    median_index_dict : dict, for collect and extract the median index data
+    median_slice_dict : dict, for collect and extract the slice of median width data
+    target_length     : int, to change the value that you want to extract the feature.
+    
+    return            : dict, the width from different file
+                        dict, the median slice from different file
+    """
     get_edge_from_node(index,node_dict,node,exp)
-    get_slices_from_node(index,slice_dict,node_dict,exp,target_length=120)
+    get_slices_from_node(index,slice_dict,node_dict,exp,target_length=target_length)
     get_width_from_slices(index,model,slice_dict,width_dict)
     get_median_index_from_width(index,width_dict,median_index_dict)
     get_slice_from_median_index(index,median_index_dict,slice_dict,median_slice_dict)
     return width_dict, median_slice_dict
-
 
 if __name__ == '__main__':
     directory_groundtruths = os.path.join(storage_path,"video","521_20230104")
