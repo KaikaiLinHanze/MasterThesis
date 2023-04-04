@@ -74,10 +74,14 @@ def plot_seperate_dataset(model,dataset:str,value_size:int,crop_value:int):
 
 def get_regression_line(X_test, y_test, x_range=[0, 14]):
     """
-    for plotting the X,y with regression line and the R square.
+    for plotting the X,y with actual line and the R square.
     
-    X_test: int, for plotting the 
-    y_test: int, 
+    X_test : int, with the predicted width
+    y_test : int, with the actual width
+    x_range: list, the range for plotting
+    
+    return : list, the X value for drawing the actual line
+             list, the y value for drawing the actual line
     """
     X = np.array([1,2,3,4]).reshape(4,1)
     y = np.array([1,2,3,4]).reshape(4,1)
@@ -90,7 +94,12 @@ def get_regression_line(X_test, y_test, x_range=[0, 14]):
 
 def compare_predict_extact(model,X_test,y_test,x_range=[0, 14]):
     """
-    model
+    for plotting the predict width, actual width, and the R square
+    
+    model   : object, the model for prediction
+    X_test  : array, for feature
+    y_test  : array, for label
+    x_range : list, the limitation of the plotting
     """
     plt.plot(y_test,model.predict(X_test), "o", label="width")
     x, y = get_regression_line(model.predict(X_test), y_test, x_range)
@@ -104,13 +113,23 @@ def compare_predict_extact(model,X_test,y_test,x_range=[0, 14]):
 
 def compare_different_model(model, X_test, y_test, set_title="HB", total=3, plot_number=1,x_range=[0,14]):
     """
+    for plotting the performance of different model
     
+    model      : object, the tf model that you would like to use for prediction
+    X_test     : array, the feature
+    y_test     : array, the label
+    set_title  : str, for setting the title of the subplot
+    total      : int, total model that you would like to compare
+    plot_number: int, the order that you would like to put your subplot
+    x_range    : list, the boundry of the actual line
+    
+    return     : object, the subplot 
     """
     x, y = get_regression_line(model.predict(X_test), y_test,x_range)
     sub = plt.subplot(1, total, plot_number)
     sub.plot(x, y)
-    sub.plot(model.predict(X_test), y_test, "o", label="width")
-    sub.set(title=set_title, xlabel="predict", ylabel="actual")
+    sub.plot(y_test,model.predict(X_test), "o", label="width")
+    sub.set(title=set_title, ylabel="predict", xlabel="actual")
     return sub
 
 

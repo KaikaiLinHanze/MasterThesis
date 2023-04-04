@@ -8,7 +8,7 @@ You can change the download path, AMFTracker_path to run the code.
 """
 
 IMAGESIZE = 120
-OUTPUTSIZE = 80
+OUTPUTSIZE = 100
 
 download_path = "/Users/kai/Downloads/graduation/final_git/MasterThesis/"
 AMFTracker_path = "/Users/kai/Downloads/graduation/AMFtrack"
