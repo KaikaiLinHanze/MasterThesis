@@ -71,7 +71,7 @@ def evaluate_model(model, X, y, X_test,y_test,learning_rate_value=0.001,crop_siz
         val_feature  = X[val_index]
         val_label    = y[val_index]
         model.compile(
-            optimizer=keras.optimizers.Adam(learning_rate=learning_rate_value),
+            optimizer=tf.keras.optimizers.Adam(learning_rate=learning_rate_value),
             loss="mean_squared_error",
             metrics="mean_absolute_error")
         history = model.fit(

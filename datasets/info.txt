@@ -1,7 +1,7 @@
 The dataset can be seperate into two parts, including dataset for PRINCE ML model, dataset for 50X ML model.
 
 dataset for 50X ML model 
-    50X_groundtruth_20221116_Plate21
+    50X_groundtruth_20221116_Plate705
     50X_groundtruth_20230109_Plate521
     50X_groundtruth_20230111_Plate493
     50X_groundtruth_20230111_Plate521
@@ -60,6 +60,5 @@ dataset for ML model
     single_lum_400_focus_0_test
     single_lum_400_focus_0_train
     test_felix_mardi
-    vary_width
     varying_lum_and_focus_test
     varying_lum_and_focus_train

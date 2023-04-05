@@ -25,7 +25,6 @@ def evaluate_epoch(history,type="loss"):
         plt.plot(history.history["loss"],label="Loss")
         plt.plot(history.history["val_loss"],label="Val_Loss")
         plt.ylabel('Loss')
-        plt.ylim(0, 20)
     if type == "mae":
         plt.plot(history.history["mean_absolute_error"],label="MAE")
         plt.plot(history.history["val_mean_absolute_error"],label="Val_MAE")
@@ -69,7 +68,7 @@ def plot_seperate_dataset(model,dataset:str,value_size:int,crop_value:int):
     y = y * value_size
     X_train_iter, X_test_iter, y_train_iter, y_test_iter = train_test_split(X, y, test_size=0.2, random_state=42, shuffle=True)
     X_test = data_preparation(X_test_iter,crop_value)
-    plt.plot(model.predict(X_test), y_test_iter,"o",label = dataset)
+    plt.plot(y_test_iter,model.predict(X_test), "o",label = dataset)
     return plt
 
 def get_regression_line(X_test, y_test, x_range=[0, 14]):
