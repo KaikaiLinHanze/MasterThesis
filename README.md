@@ -7,50 +7,53 @@ Student: Kai-Kai Lin ka.lin@st.hanze.nl
 Supervisor: Tsjerk Wassenaar t.a.wassenaar@pl.hanze.nl  
 Daily supervisor: Coretin Bisot C.Bisot@amolf.nl  
 
-# Research questions
+# Research questions  
 •	How does the width evolve between different hyphae segments over time?  
 •	Is there a relationship between the width of the different hyphae edges at the intersection?  
 •	What criteria can be used to categorize RH and BAS?  
 
 # Requirements
-•	Python 3.8.10
-•	Numpy
-•	MatplotLib
-•	Scikit-learn
-•	Tensorflow
-•	Keras
+
+•	Python 3.8.10  
+•	Numpy  
+•	MatplotLib  
+•	Scikit-learn  
+•	Tensorflow  
+•	Keras  
 
 # Setup
-1. Clone the repository to your computer:
+## 1. Clone the repository to your computer:
 ```
 git clone https://github.com/KaikaiLinHanze/MasterThesis.git
 ```
-2. Create a virtual environment.
+## 2. Create a virtual environment.
 ```
 virtualenv --python=python3 project
 ```
-3. Launching environment:
+## 3. Launching environment:
 ```
 source project/bin/activate
 ```
-4. Install all of the requirements (make sure you already launched the environment)
+## 4. Install all of the requirements (make sure you already launched the environment)
 ```
 pip3 install -r requirements.txt
 ```
-5. Additionnal packages to install:
+## 5. Additional packages to install:
 ```
 git clone https://github.com/Cocopyth/AMFtrack.git
 git clone https://github.com/gattia/cycpd.git
 cd cycpd
 sudo python setup.py install
 ```
-Install Fiji:
-Chose a location on the local machine and download: https://imagej.net/software/fiji/downloads
+### Install Fiji:  
+Chose a location on the local machine and download:  
+https://imagej.net/software/fiji/downloads
 
-Install AniFilters:
-Chose a location on the local machine and download: http://forge.cbp.ens-lyon.fr/redmine/projects/anifilters
+### Install AniFilters:  
+Chose a location on the local machine and download:  
+http://forge.cbp.ens-lyon.fr/redmine/projects/anifilters
 
-6. Create a Local.env file
+## 6. Create a Local.env file
 Create a text file named local.env in the AMFTrack folder (for example: touch local.env)
 ```
 DATA_PATH=/Users/kai/Downloads/graduation/final_git/MasterThesis/datasets
@@ -70,7 +73,7 @@ REFRESH_TOKEN =________
 USER_ID=________
 ```
 
-7. path:  
+## 7. Path  
 Before you run jupyter notebook make sure you already changed the path in src folder config file.
 
 # Structure
