@@ -98,6 +98,7 @@ Before you run jupyter notebook make sure you already changed the path in src fo
     |     |-- Murray's law: the data for Murray's law and use different coefficient for seperate RH and BAS
     |     |
     |     |-- Width: Width growing for local view and global view
+    |     |
     |--- datasets: the data set for training the CNN model ( with different focus, width, illumination
     |     |
     |--- model: with final model for the 2X and 50X magnificaion. In this research, only the 2X one was used.
