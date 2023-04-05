@@ -13,3 +13,112 @@ Daily supervisor: Coretin Bisot C.Bisot@amolf.nl
 •	What criteria can be used to categorize RH and BAS?  
 
 # Requirements
+•	Python 3.8.10
+•	Numpy
+•	MatplotLib
+•	Scikit-learn
+•	Tensorflow
+•	Keras
+
+# Setup
+1. Clone the repository to your computer:
+```
+git clone https://github.com/KaikaiLinHanze/MasterThesis.git
+```
+2. Create a virtual environment.
+```
+virtualenv --python=python3 project
+```
+3. Launching environment:
+```
+source project/bin/activate
+```
+4. Install all of the requirements (make sure you already launched the environment)
+```
+pip3 install -r requirements.txt
+```
+5. Additionnal packages to install:
+```
+git clone https://github.com/Cocopyth/AMFtrack.git
+git clone https://github.com/gattia/cycpd.git
+cd cycpd
+sudo python setup.py install
+```
+Install Fiji:
+Chose a location on the local machine and download: https://imagej.net/software/fiji/downloads
+
+Install AniFilters:
+Chose a location on the local machine and download: http://forge.cbp.ens-lyon.fr/redmine/projects/anifilters
+
+6. Create a Local.env file
+Create a text file named local.env in the AMFTrack folder (for example: touch local.env)
+```
+DATA_PATH=/Users/kai/Downloads/graduation/final_git/MasterThesis/datasets
+FIJI_PATH=/Users/kai/Downloads/graduation/AMFtrack/Fiji.app
+TEMP_PATH=/Users/kai/Downloads/graduation/final_git/MasterThesis/tmp
+STORAGE_PATH=/Users/kai/Downloads/graduation/final_git/MasterThesis/tmp
+PASTIS_PATH=/home/cbisot/anis_filter/anifilters/bin/ani2D 
+#the path to the executable of anisotropic filtering
+SLURM_PATH=/scratch-shared/amftrack/slurm #this is for parallelizez job on snellius
+SLURM_PATH_transfer=/data/temp
+DROPBOX_PATH = /Users/kai/Downloads/graduation/
+
+#For Dropbox transfers, ask dropbox admin for these values
+APP_KEY=________
+APP_SECRET=________
+REFRESH_TOKEN =________
+USER_ID=________
+```
+
+7. path:
+Before you run jupyter notebook make sure you already changed the path in src folder config file.
+
+# Structure
+```
+     -----
+    |     |
+    |--- Experiment : the folder to save all of the experiment data
+    |     |
+    |     |-- the raw data for measure all of the hyphal width
+    |     |
+    |     |-- the data for examining unceratinity
+    |     |
+    |     |-- xlsx file for node, edge, position
+    |     |
+    |--- Plot data : the folder to save all of the data that was plotted
+    |     |
+    |     |-- Feature_outlier: the outlier feature
+    |     |
+    |     |-- GroundTruthML_Performance: the performance of the new model for 50X magnification. It will be use in the future.
+    |     |
+    |     |-- Labelme_uncertainity: the data for detecting manual annotation imprecision and width variation 
+    |     |
+    |     |-- Model_performance: the performance of the CNN model and also compare with other model
+    |     |
+    |     |-- Murray's law: the data for Murray's law and use different coefficient for seperate RH and BAS
+    |     |
+    |     |-- Width: Width growing for local view and global view
+    |--- datasets: the data set for training the CNN model ( with different focus, width, illumination
+    |     |
+    |--- model: with final model for the 2X and 50X magnificaion. In this research, only the 2X one was used.
+    |     |
+    |--- notebook: save the jupyter notebook for all of the analysis that I did during the intern
+    |     |
+    |--- src: the folder to save all of the scripts. Before run the code please change the path in config.
+    |     |
+    |     |-- config: set up the SIZE of the image and output for machine learning model
+    |     |
+    |     |-- data_prepare: for loading dataset and for data augmentation
+    |     |
+    |     |-- exp_surf: used to navigate the PRINCE data for experience. for node, edge data
+    |     |
+    |     |-- make_dataset: make dataset for training model. get segment, slice, width 
+    |     |
+    |     |-- model: for training, evaluating models. load model, tuning, bootstrapping
+    |     |
+    |     |-- plot: plot different output. model structure, performance, 
+    |     |
+    |     |-- video: extract img data from certain region from experiment class. for node, edge, slice, width data
+    |     |
+     -----
+``` 
