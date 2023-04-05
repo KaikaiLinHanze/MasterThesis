@@ -70,7 +70,7 @@ REFRESH_TOKEN =________
 USER_ID=________
 ```
 
-7. path:
+7. path:  
 Before you run jupyter notebook make sure you already changed the path in src folder config file.
 
 # Structure
