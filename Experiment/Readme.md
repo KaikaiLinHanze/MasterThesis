@@ -1,4 +1,6 @@
-Labelme is an open source based on http://labelme.csail.mit.edu. It was written in Python for image segment annotation. It can save the shapes that you create as JSON file.  
+# Labelme
+Labelme is an open source based on http://labelme.csail.mit.edu.  
+It was written in Python for image segment annotation. It can save the shapes that you create as JSON file.  
 You can follow the instruction from: https://pypi.org/project/labelme/
 
 # Requirements
