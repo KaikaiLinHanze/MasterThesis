@@ -14,7 +14,7 @@ Daily supervisor: Coretin Bisot C.Bisot@amolf.nl
 
 # Requirements
 
-•	Python 3.8.10  
+•	Python 3.10.6
 •	Numpy  
 •	MatplotLib  
 •	Scikit-learn  
