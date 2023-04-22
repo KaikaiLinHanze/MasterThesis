@@ -14,13 +14,13 @@ Daily supervisor: Coretin Bisot C.Bisot@amolf.nl
 
 # Requirements
 
-•	Python 3.8.10  
-•	Numpy  
-•	MatplotLib  
-•	Scikit-learn  
-•	Tensorflow  
-•	Keras  
-
+•	Python 3.10.6   
+•	Numpy  1.22.3  
+•	MatplotLib  3.6.1  
+•	Scikit-learn 1.1.3  
+•	Tensorflow 2.8.1  
+•	Keras  2.8.0  
+ 
 # Setup
 ## 1. Clone the repository to your computer:
 ```
